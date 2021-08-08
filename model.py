@@ -20,8 +20,9 @@ for line in lines:
         images.append(image)
     
     mesaurement = float(line[3])
-    mesaurment_left = mesaurement + 0.2
-    mesaurment_right = mesaurement - 0.2
+    steering_correction = 0.2
+    mesaurment_left = mesaurement + steering_correction
+    mesaurment_right = mesaurement - steering_correction
     mesaurements.append(mesaurement)
     mesaurements.append(mesaurment_left)
     mesaurements.append(mesaurment_right)
